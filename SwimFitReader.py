@@ -169,4 +169,4 @@ class SwimFitReader():
         [minutes, rest] = str(minutes).split('.')
         seconds = round(float('0.' + rest)*60, 1)
 
-        return str(minutes) + ":" + str(seconds)
+        return str(minutes) + ":" + str(seconds).zfill(4)
